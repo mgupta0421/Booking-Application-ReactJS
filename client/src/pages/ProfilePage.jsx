@@ -15,7 +15,12 @@ if(ready && !user) {
     
 return (
         <div>
-            This is account page. {user.name}
+            <nav className ="w-full-flex justify-center mt-8 gap-4">
+                <Link className = "py-2 px-6 bg-gray-300 rounded-full" to= {'/accounts'}> My Profile </Link>
+                <Link className = "py-2 px-6 " to= {'/accounts/bookings'}> My Bookings </Link>
+                <Link className = "py-2 px-6 " to= {'/accounts/places'}> My Accomodations </Link>
+
+            </nav>
         </div>
     );
 }

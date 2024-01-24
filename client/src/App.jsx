@@ -11,6 +11,13 @@ import ProfilePage from "./pages/IndexPage.jsx";
 axios.defaults.baseURL = 'http://localhost:4000';
 axios.defaults.withCredentials = true;
 
+/*function App(){
+  return (
+    <div className='bg-red-500'>test</div>
+    
+  )
+} */
+
 function App(){
   return (
     <UserContextProvider>
@@ -20,11 +27,13 @@ function App(){
         <Route path="/login" element ={<LoginPage />} />
         <Route path="/register" element ={<RegisterPage />} /> 
         <Route path="/account" element={<ProfilePage />} />       
+        <Route path="/account/places" element={<ProfilePage />} />       
+    
       </Route>  
     </Routes>
     </UserContextProvider>
     
   )
-}
+} 
 
 export default App
