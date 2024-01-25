@@ -1,1 +1,1 @@
-# Burger-Application-ReactJS-
+# Booking-Application-ReactJS
